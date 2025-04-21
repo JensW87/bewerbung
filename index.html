@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Bewerbungsmappe Jens Wilkens</title>
+  <style>
+    body { margin: 0; background: #222; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+    #flipbook { width: 90vw; height: 90vh; }
+    .page img { width: 100%; height: auto; display: block; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turn.js"></script>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page"><img src="page_01.png"></div>
+    <div class="page"><img src="page_02.png"></div>
+    <div class="page"><img src="page_03.png"></div>
+    <div class="page"><img src="page_04.png"></div>
+    <div class="page"><img src="page_05.png"></div>
+    <div class="page"><img src="page_06.png"></div>
+    <div class="page"><img src="page_07.png"></div>
+    <div class="page"><img src="page_08.png"></div>
+    <div class="page"><img src="page_09.png"></div>
+    <div class="page"><img src="page_10.png"></div>
+    <div class="page"><img src="page_11.png"></div>
+    <div class="page"><img src="page_12.png"></div>
+    <div class="page"><img src="page_13.png"></div>
+    <div class="page"><img src="page_14.png"></div>
+    <div class="page"><img src="page_15.png"></div>
+
+  </div>
+  <script>
+    $("#flipbook").turn({
+      width: '100%',
+      height: '100%',
+      autoCenter: true
+    });
+  </script>
+</body>
+</html>
