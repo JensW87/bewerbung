@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <title>Digitale Bewerbungsmappe – Jens Wilkens</title>
   <style>
-    body { margin: 0; background: #222; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
-    #flipbook { width: 90vw; height: 90vh; }
-    .page img { width: 100%; height: auto; display: block; }
+    body {
+      margin: 0;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #flipbook {
+      width: 90vw;
+      height: 90vh;
+    }
+    .page {
+      background: white;
+    }
+    .page img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   </style>
   <script src="jquery-3.6.0.min.js"></script>
   <script src="turn.min.js"></script>
@@ -31,11 +49,12 @@
   </div>
 
   <script>
-    $(document).ready(function() {
-      $("#flipbook").turn({
-        width: '100%',
-        height: '100%',
-        autoCenter: true
+    document.addEventListener("DOMContentLoaded", function () {
+      $('#flipbook').turn({
+        autoCenter: true,
+        elevation: 50,
+        gradients: true,
+        duration: 1000
       });
     });
   </script>
